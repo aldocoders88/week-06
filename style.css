@@ -1,44 +1,70 @@
-body { background-color:#8ACFF8; }
+/* Styling Utama Halaman */
+body {
+background-color: #f6f4d2;
+font-family: 'Times New Roman', Times, serif;
+margin: 0;
+padding: 30px 20px;
+}
 
-h1 {	color:#8ACFF8;
-		text-align:center;
-		font-size: 30pt;
-		font-weigth: normal;
-		font-family: sans-serif;
-		font-style: italicos;
-	}
-	
-p  {
-	color:#BDB2FF;
-	background-color: blue;
-	padding: 0.6 em;
-	margin: auto;
-	margin-botttom: 5 em;
-	text-align: right;
-	border: 3px dashed black;
-	width: 50%;
-	min-width: 40em;
-	}
-	
-.kanan { text-align: right; }
-.kiri { text-align: left; }
-.tengah { text-align: center; }
+/* Judul Utama */
+h1 {
+text-align: center;
+color: #72751b;
+font-style: italic;
+font-size: 42px;
+font-weight: normal;
+margin-top: 10px;
+margin-bottom: 35px;
+}
 
-.krem {background-color: #FFF6DC }
-.oren {background-color: #F2842F }
-.ungu {background-color: #9564DD }
-.hijau {background-color: #76C457 }
-.abu {background-color: #C5C1C1 }
-.kuning {background-color: #FFF449 }
-.coklat {background-color: #60241E }
-.mereah {background-color: #FF0000 }
-.biru {background-color: #4C8CE4 }
-	
-div {
-	text-align:center;
-	}
-	
-a {
-	color: #6E3511;
-	text-decoration:none;
-	}
+/* Styling Kotak Paragraf (Pengganti Flexbox menggunakan margin auto) */
+p {
+width: 90%;
+max-width: 650px;
+margin: 20px auto;
+padding: 18px 25px;
+border: 2px solid #000000;
+box-sizing: border-box;
+color: #d63b96;
+font-size: 18px;
+line-height: 1.5;
+}
+
+/* Pengaturan Perataan Teks */
+.kanan {
+text-align: right;
+}
+
+.kiri {
+text-align: left;
+}
+
+/* Warna Latar Belakang Kotak berdasarkan Atribut / Class */
+p[biru], .biru {
+background-color: #b6daf7;
+}
+
+p[oren], .oren {
+background-color: #e2b8eb;
+}
+
+p[coklat], .coklat {
+background-color: #fde8db;
+}
+
+/* Styling Khusus untuk Kotak Link (Tombol Kembali ke Home) */
+p:last-of-type {
+background-color: #d2ebd4;
+text-align: center;
+}
+
+p a {
+color: #6b6d1e;
+text-decoration: none;
+font-size: 18px;
+font-weight: normal;
+}
+
+p a:hover {
+text-decoration: underline;
+}
