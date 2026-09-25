@@ -23,6 +23,16 @@ p  {
 .kanan { text-align: right; }
 .kiri { text-align: left; }
 .tengah { text-align: center; }
+
+.krem {background-color: #FFF6DC }
+.oren {background-color: #F2842F }
+.ungu {background-color: #9564DD }
+.hijau {background-color: #76C457 }
+.abu {background-color: #C5C1C1 }
+.kuning {background-color: #FFF449 }
+.coklat {background-color: #60241E }
+.mereah {background-color: #FF0000 }
+.biru {background-color: #4C8CE4 }
 	
 div {
 	text-align:center;
