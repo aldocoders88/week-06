@@ -1,15 +1,23 @@
 /* Styling Utama Halaman */
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Times New Roman', Times, serif;
+}
+
 body {
-background-color: #f6f4d2;
-font-family: 'Times New Roman', Times, serif;
-margin: 0;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: #FF8F00;
 padding: 30px 20px;
 }
 
 /* Judul Utama */
 h1 {
 text-align: center;
-color: #72751b;
+color: #000000;
 font-style: italic;
 font-size: 42px;
 font-weight: normal;
@@ -18,16 +26,17 @@ margin-bottom: 35px;
 }
 
 /* Styling Kotak Paragraf (Pengganti Flexbox menggunakan margin auto) */
-p {
-width: 90%;
+p.teks{
+width: 100%;
 max-width: 650px;
 margin: 20px auto;
 padding: 18px 25px;
 border: 2px solid #000000;
 box-sizing: border-box;
-color: #d63b96;
+color: #000000;
 font-size: 18px;
 line-height: 1.5;
+
 }
 
 /* Pengaturan Perataan Teks */
@@ -45,26 +54,81 @@ background-color: #b6daf7;
 }
 
 p[oren], .oren {
-background-color: #e2b8eb;
+background-color: #F2A900;
 }
 
 p[coklat], .coklat {
 background-color: #fde8db;
 }
 
+p.krem {
+background-color: #F9E6A8;
+}
+
+p.orengelap {
+background-color: #CC6F00;
+}
+
 /* Styling Khusus untuk Kotak Link (Tombol Kembali ke Home) */
-p:last-of-type {
-background-color: #d2ebd4;
+.back a {
+background-color: #4D2A00;
 text-align: center;
-}
-
-p a {
-color: #6b6d1e;
-text-decoration: none;
+width: 100%;
+max-width: 650px;
+padding: 18px 20px;
+border: 2px solid #000000;
+box-sizing: border-box;
+color: #FFFFFF;
 font-size: 18px;
-font-weight: normal;
+line-height: 1.5;
+text-decoration: none;
 }
 
-p a:hover {
+.back {
+	display: flex;
+}
+
+
+a.back:hover {
 text-decoration: underline;
+}
+
+/* Styling Khusus Halaman Index */
+.banner {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 500px;
+height: 40px;
+background-color: #FFF8CF; // background
+box-sizing: border-box;
+border: 2px solid #2D1A01;
+font-style: italic;
+color: #642912;			// text
+
+margin: 0;
+}
+
+.daftar-puisi {
+text-align: center;
+margin-top: 40px;
+font-size: 18px;
+line-height: 2;
+}
+
+.daftar-puisi a {
+color: #642912;
+text-decoration: none;
+font-weight: bold;
+}
+
+.daftar-puisi a:hover {
+text-decoration: underline;
+}
+
+hr {
+border: none;
+border-top: 1px solid #EEEEEE;
+margin-top: 40px;
 }
